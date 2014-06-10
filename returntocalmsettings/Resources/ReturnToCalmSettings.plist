@@ -6,12 +6,6 @@
 	<array>
 		<dict>
 			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
-			<string>ReturnToCalm</string>
-		</dict>
-		<dict>
-			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
 			<true/>
@@ -28,7 +22,7 @@
 			<key>defaults</key>
 		 	<string>com.efrederickson.returntocalm.settings</string>
 			<key>detail</key>
-			<string>PSListItemsController</string>
+			<string>RTCListItemsController</string>
 			<key>default</key>
 			<integer>0</integer>
 			<key>key</key> 
@@ -49,6 +43,13 @@
 				<integer>2</integer>
 				<integer>3</integer>
 			</array>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Copyright (C) 2014 Elijah Frederickson. Source code available on GitHub.</string>
 		</dict>
 	</array>
 	<key>title</key>

@@ -1,5 +1,12 @@
 #import <Preferences/Preferences.h>
 
+@interface PSListController (RTC)
+-(UIView*)view;
+-(UINavigationController*)navigationController;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+@end
+
 @interface ReturnToCalmSettingsListController: PSListController {
 }
 @end
@@ -11,6 +18,38 @@
 	}
 	return _specifiers;
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.view.tintColor = [UIColor orangeColor];
+    self.navigationController.navigationBar.tintColor = [UIColor orangeColor];
+
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+    
+    self.view.tintColor = nil;
+    self.navigationController.navigationBar.tintColor = nil;
+}
+
 @end
 
-// vim:ft=objc
+@interface RTCListItemsController : PSListItemsController
+@end
+
+@implementation RTCListItemsController
+- (void)viewWillAppear:(BOOL)animated {
+    self.view.tintColor = [UIColor orangeColor];
+    self.navigationController.navigationBar.tintColor = [UIColor orangeColor];
+    
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+    
+    self.view.tintColor = nil;
+    self.navigationController.navigationBar.tintColor = nil;
+}
+@end
