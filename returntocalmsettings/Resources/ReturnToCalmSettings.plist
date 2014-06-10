@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>ReturnToCalm</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.efrederickson.returntocalm.settings</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+	  		<string>PSLinkListCell</string>
+			<key>defaults</key>
+		 	<string>com.efrederickson.returntocalm.settings</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>key</key> 
+			<string>color</string>
+			<key>label</key>
+			<string>CallBar Color</string>
+			<key>validTitles</key>
+			<array>
+				<string>Dynamic</string>
+              			<string>Black</string>
+				<string>Light green-ish</string>
+				<string>Light blue</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+			</array>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>ReturnToCalm</string>
+</dict>
+</plist>

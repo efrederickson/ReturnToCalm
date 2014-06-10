@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = ReturnToCalmSettings;
+		cell = PSLinkCell;
+		detail = "ReturnToCalmSettingsListController";
+		icon = "ReturnToCalmSettings.png";
+		isController = 1;
+		label = ReturnToCalm;
+	};
+}
