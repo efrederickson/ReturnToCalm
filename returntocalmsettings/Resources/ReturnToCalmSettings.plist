@@ -37,6 +37,7 @@
               			<string>Black</string>
 				<string>Light green-ish</string>
 				<string>Light blue</string>
+				<string>Light Red</string>
 			</array>
 			<key>validValues</key>
 			<array>
@@ -44,6 +45,7 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
+				<integer>4</integer>
 			</array>
 			<key>PostNotification</key>
 			<string>com.efrederickson.returntocalm/reloadSettings</string>
