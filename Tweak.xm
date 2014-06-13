@@ -2,7 +2,7 @@
 
 #define CALLBAR_LENIENCY 0.1
 #define NEON_COLOR [UIColor colorWithRed:0.0862745 green:0.94902 blue:0.0862745 alpha:1]
-#define SKYPE_COLOR [UIColor colorWithRed:1 green:0 blue:0 alpha:1]
+#define RED_COLOR [UIColor colorWithRed:1 green:0 blue:0 alpha:1] // All other double-height status bar programs use this.
 
 @interface UIColor (Private)
 - (BOOL)_isSimilarToColor:(UIColor *)color withinPercentage:(CGFloat)percentage;
@@ -50,11 +50,12 @@ UIColor *getCustomColor()
 
 %hook UIStatusBarBackgroundView
 - (id)initWithFrame:(CGRect)arg1 style:(id)arg2 backgroundColor:(UIColor *)arg3 {
-    if (enabled && ([arg3 _isSimilarToColor:NEON_COLOR withinPercentage:CALLBAR_LENIENCY] || [arg3 _isSimilarToColor:SKYPE_COLOR withinPercentage:CALLBAR_LENIENCY])) {
+    if (enabled && ([arg3 _isSimilarToColor:NEON_COLOR withinPercentage:CALLBAR_LENIENCY] || [arg3 _isSimilarToColor:RED_COLOR withinPercentage:CALLBAR_LENIENCY])) {
         return %orig(arg1, arg2, getCustomColor());
     }
     return %orig();
 }
+
 %end
 
 %hook UIStatusBar
