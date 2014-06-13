@@ -48,7 +48,7 @@ UIColor *getCustomColor()
 
 %hook UIStatusBarBackgroundView
 - (id)initWithFrame:(CGRect)arg1 style:(id)arg2 backgroundColor:(UIColor *)arg3 {
-    if (enabled && ([arg3 _isSimilarToColor:NEON_COLOR withinPercentage:CALLBAR_LENIENCY] || [arg3 _isSimilarToColor:SKYPE_COLOR withinPercentage:CALLBAR_LENIENCY]) {
+    if (enabled && ([arg3 _isSimilarToColor:NEON_COLOR withinPercentage:CALLBAR_LENIENCY] || [arg3 _isSimilarToColor:SKYPE_COLOR withinPercentage:CALLBAR_LENIENCY])) {
         return %orig(arg1, arg2, getCustomColor());
     }
     return %orig();
