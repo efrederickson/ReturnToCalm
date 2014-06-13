@@ -43,7 +43,7 @@ UIColor *getCustomColor()
     if (colorMode == 3)
         return [UIColor colorWithRed:0 green:191/255.0 blue:1 alpha: 1.0];
     if (colorMode == 4)
-	return [UIColor colorWithRed:0.6 green:0.1 blue:0 alpha:1.0];
+        return [UIColor colorWithRed:0.6 green:0.1 blue:0 alpha:1.0];
         
     return NEON_COLOR;
 }
