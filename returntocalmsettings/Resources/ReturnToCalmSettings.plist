@@ -20,24 +20,24 @@
 		</dict>
 		<dict>
 			<key>cell</key>
-	  		<string>PSLinkListCell</string>
+			<string>PSLinkListCell</string>
 			<key>defaults</key>
-		 	<string>com.efrederickson.returntocalm.settings</string>
+			<string>com.efrederickson.returntocalm.settings</string>
 			<key>detail</key>
 			<string>RTCListItemsController</string>
 			<key>default</key>
 			<integer>1</integer>
-			<key>key</key> 
+			<key>key</key>
 			<string>color</string>
 			<key>label</key>
 			<string>CallBar Color</string>
 			<key>validTitles</key>
 			<array>
 				<string>Dynamic</string>
-              			<string>Black</string>
+				<string>Black</string>
 				<string>Light green-ish</string>
 				<string>Light blue</string>
-				<string>Light Red</string>
+				<string>Dark Red</string>
 			</array>
 			<key>validValues</key>
 			<array>
@@ -50,7 +50,6 @@
 			<key>PostNotification</key>
 			<string>com.efrederickson.returntocalm/reloadSettings</string>
 		</dict>
-
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
